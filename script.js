@@ -3,8 +3,13 @@ let tasks = [];
 function displaytask() {
     let html = "";
     for (let i = 0; i < tasks.length; i++) {
-        html += "<li><input type='checkbox' onclick='togglecheck(" + i + ")' " 
-              + (tasks[i].done ? "checked" : "") + "> " + tasks[i].text + "</li>";
+        html += "<li><div class='task-row'>"
+              + "<span class='task-text'>" + tasks[i].text + "</span>"
+              + "<span class='task-actions'>"
+              + "<span onclick='togglecheck(" + i + ")' style='cursor:pointer; color:" + (tasks[i].done ? "green" : "black") + ";'>✓</span>"
+              + " <span onclick='deletetask(" + i + ")' style='cursor:pointer; color:red;'>✕</span>"
+              + "</span>"
+              + "</div></li>";
     }
     document.getElementById("list").innerHTML = html;
 }
@@ -12,6 +17,7 @@ function displaytask() {
 function togglecheck(i) {
     tasks[i].done = !tasks[i].done;
     savetask();
+    displaytask();
 }
 
 function addtask() {
@@ -25,6 +31,12 @@ function addtask() {
 
     tasks.push({ text: text, done: false });
     taskIn.value = "";
+    savetask();
+    displaytask();
+}
+
+function deletetask(i) {
+    tasks.splice(i, 1);
     savetask();
     displaytask();
 }

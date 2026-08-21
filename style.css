@@ -43,6 +43,7 @@ h1 {
     border-radius: 30px;
     border-width: 3px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.4mm;
 }
 
 #fieldset {
@@ -60,8 +61,22 @@ h1 {
     font-size:larger;
 }
 
-fieldset li{
+fieldset li {
     font-size: larger;
     margin-left: -10%;
+    display: flex;
+    list-style-type: disc;
+    display: list-item;
 }
 
+.task-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-action {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
