@@ -80,3 +80,24 @@ fieldset li {
     align-items: center;
     gap: 8px;
 }
+
+
+@media (max-width: 600px) {
+    #fieldset {
+        width: 80%;
+    }
+
+    .divtask {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .divtask input {
+        width: 70%;
+    }
+
+    #addbutton {
+        width: 30%;
+        margin: auto;
+    }
+}
