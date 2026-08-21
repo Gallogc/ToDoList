@@ -1,0 +1,67 @@
+body {
+    background-image: linear-gradient(to bottom, #552586, #6A359C, #804FB3, #9969C7, #B589D6) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.divtask {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    margin-bottom: 3%;
+}
+
+.divtask input {
+    border-radius: 30px;
+    height: 40px;
+    text-align: center;
+    background-color: #e5e1e7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+#addbutton {
+    background-color: rgb(252, 80, 0);
+    border-radius: 10rem;
+    height: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#clearbutton {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    margin-top: 15px;
+    height: 30px;
+    border-radius: 30px;
+    border-width: 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#fieldset {
+    background-color: white;
+    width: 20%;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#fieldset p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: -2%;
+    margin-left: 0%;
+    font-size:larger;
+}
+
+fieldset li{
+    font-size: larger;
+    margin-left: -10%;
+}
+
